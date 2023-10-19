@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [data, setData] = useState([]);
-  const [search, setSearch] = useState("Blue");
+  const [search, setSearch] = useState("s");
   const [a, setA] = useState(true);
   const [b, setB] = useState(false);
 

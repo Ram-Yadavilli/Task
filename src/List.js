@@ -19,22 +19,22 @@ const List = (props) => {
       <div className="ic">
         <h4 className={h}>{product_title}</h4>
 
-        {product_variants[0].v1.includes(search) ||
-        product_variants[0].v1.includes(search) ? (
+        {product_variants[0].v1.includes(search.toUpperCase()) ||
+        product_variants[0].v1.toUpperCase().includes(search.toUpperCase()) ? (
           <p className="co">{product_variants[0].v1}</p>
         ) : (
           <p>{product_variants[0].v1}</p>
         )}
 
-        {product_variants[1].v2.includes(search) ||
-        product_variants[1].v2.includes(search) ? (
+        {product_variants[1].v2.includes(search.toUpperCase()) ||
+        product_variants[1].v2.toUpperCase().includes(search.toUpperCase()) ? (
           <p className="co">{product_variants[1].v2}</p>
         ) : (
           <p>{product_variants[1].v2}</p>
         )}
 
-        {product_variants[2].v3.includes(search) ||
-        product_variants[2].v3.includes(search) ? (
+        {product_variants[2].v3.includes(search.toUpperCase()) ||
+        product_variants[2].v3.toUpperCase().includes(search.toUpperCase()) ? (
           <p className="co">{product_variants[2].v3}</p>
         ) : (
           <p>{product_variants[2].v3}</p>
